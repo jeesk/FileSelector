@@ -152,6 +152,7 @@ public class MainActivity extends AppCompatActivity {
     public void openOnlyFolder( ) {
         FileSelector.from(this)
                 .onlySelectFolder()  //只能选择文件夹
+                .setTitle("选择文件夹")
                 .requestCode(1) //设置返回码
                 .start();
     }

@@ -84,6 +84,10 @@ public final class SelectCreator {
         selectOptions.setTitleRightColor(color);
         return this;
     }
+    public SelectCreator setTitle(String title){
+        selectOptions.setTitle(title);
+        return this;
+    }
    /* public SelectCreator onlyShowImages() {
         selectOptions.onlyShowImages = true;
         return this;

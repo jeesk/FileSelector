@@ -33,6 +33,7 @@ public class SelectOptions {
     private int titleColor = 0;//标题文字颜色
     private int titleLiftColor = 0;//标题左边颜色
     private int titleRightColor = 0;//标题右边颜色
+    private String title = "";
 
 
     public String[] getFileTypes() {
@@ -110,6 +111,15 @@ public class SelectOptions {
 
     public void setTitleRightColor(int titleRightColor) {
         this.titleRightColor = titleRightColor;
+    }
+
+
+    public void setTitle(String title){
+        this.title = title;
+    }
+
+    public String getTitle(){
+        return this.title;
     }
 
     public static SelectOptions getInstance() {

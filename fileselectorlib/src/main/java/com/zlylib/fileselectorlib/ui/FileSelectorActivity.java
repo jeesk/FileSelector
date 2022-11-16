@@ -94,6 +94,9 @@ public class FileSelectorActivity extends AppCompatActivity implements OnItemCli
         if (SelectOptions.getInstance().getTitleBg() != 0) {
             abc.setBackgroundColor(getResources().getColor(SelectOptions.getInstance().getTitleBg()));
         }
+        if(SelectOptions.getInstance().getTitle() != null && SelectOptions.getInstance().getTitle().length() > 0){
+            abc.getTitleTextView().setText(SelectOptions.getInstance().getTitle());
+        }
         if (SelectOptions.getInstance().getTitleColor() != 0) {
             abc.getTitleTextView().setTextColor(getResources().getColor(SelectOptions.getInstance().getTitleColor()));
         }
